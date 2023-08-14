@@ -1,0 +1,14 @@
+{% extends "admin/base.html" %}
+
+{% block title %}Your App Admin{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Your App Admin</a></h1>
+{% endblock %}
+
+{% block nav-global %}
+<ul class="nav-global">
+    <li><a href="/">Home</a></li>
+    <!-- Add more links if needed -->
+</ul>
+{% endblock %}
