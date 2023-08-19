@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_tables2",
+    "crispy_forms",
+    "crispy_tailwind",
     "BJJCrudAPP",
 ]
 
@@ -133,3 +135,6 @@ DJANGO_TABLES2_TABLE_ATTRS = {
     #     'class': 'table-light',
     # },
 }
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
+CRISPY_TEMPLATE_PACK = "tailwind"

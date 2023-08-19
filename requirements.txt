@@ -1,8 +1,8 @@
 python-dotenv
 Django
-mysqlclient
-django-admin-soft-dashboard==1.0.12
 django-tables2
+django-crispy-forms
 # django-silk
 tablib
 boto3
+crispy-tailwind

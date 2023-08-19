@@ -1,2 +1,2 @@
 [tool.pyright]
-include = ["rto_consultas"]
+include = ["BJJCrudApp"]

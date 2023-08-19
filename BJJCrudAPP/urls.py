@@ -17,6 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from .views import StudentCreateView, registration_successful_view
+
+
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("ingreso/", StudentCreateView.as_view()),
+    path("success/", registration_successful_view),
 ]

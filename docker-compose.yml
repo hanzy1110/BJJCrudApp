@@ -1,14 +1,13 @@
 services:
-  rto_consultas:
-    container_name: rto_consultas
-    build: 
+  bjjcrudapp:
+    container_name: bjjcrudapp
+    build:
       context: .
       dockerfile: Dockerfile
     env_file: ./envfiles/.env
     ports:
-      - "${WEB_PORT}:8000"  #Web port 
-    volumes: 
+      - "${WEB_PORT}:8000" #Web port
+    volumes:
       - .:/home/code
     restart: unless-stopped
     command: ["/home/code/entrypoint.sh"]
-

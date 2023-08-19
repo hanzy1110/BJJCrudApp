@@ -1,10 +1,13 @@
-{% extends 'base.html' %}  <!-- Replace 'base.html' with your base template if you have one -->
+{% extends 'admin/base.html' %} <!-- Replace 'base.html' with your base template if you have one -->
+
+{% load tailwind_filters %}
+{% load crispy_forms_tags %}
 
 {% block content %}
-  <h2>Create Student</h2>
-  <form method="post">
+<h2>Inscripcion Torneo</h2>
+<form method="post">
     {% csrf_token %}
-    {{ form.as_p }}
+    {{ form|crispy }}
     <button type="submit">Save</button>
-  </form>
+</form>
 {% endblock %}
