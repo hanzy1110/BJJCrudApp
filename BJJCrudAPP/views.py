@@ -9,7 +9,8 @@ class StudentCreateView(CreateView):
     model = Student
     form_class = StudentForm
     template_name = (
-        "student_form.html"  # Replace 'your_app_name' with the actual name of your app
+        # "student_form.html"
+        "new_student_form.html"
     )
     success_url = "/success/"  # Redirect to this URL after successful form submission
 

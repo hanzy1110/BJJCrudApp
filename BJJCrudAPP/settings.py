@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_tables2",
     "crispy_forms",
-    "crispy_tailwind",
+    "crispy_bootstrap5",
     "BJJCrudAPP",
 ]
 
@@ -136,5 +136,5 @@ DJANGO_TABLES2_TABLE_ATTRS = {
     # },
 }
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = "tailwind"
-CRISPY_TEMPLATE_PACK = "tailwind"
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"

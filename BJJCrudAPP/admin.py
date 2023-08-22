@@ -9,8 +9,10 @@ class StudentAdmin(admin.ModelAdmin):
         "date_of_birth",
         "belt_colour",
         "weight",
+        "gender",
         "academy",
-        "clase",
+        "age_class",
+        "weight_class",
         "monto_pago",
         "absoluto",
     )
