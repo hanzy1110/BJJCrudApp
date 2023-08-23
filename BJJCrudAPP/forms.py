@@ -78,12 +78,12 @@ CATEGORIES = {
 }
 
 AGE_CATEGORIES = {
-    6: "infantiles",
-    17: "juveniles",
-    29: "adulto",
-    35: "master",
-    40: "master1",
-    45: "master2",
+    7: "infantiles",
+    18: "juveniles",
+    30: "adulto",
+    36: "master",
+    41: "master1",
+    46: "master2",
 }
 
 
