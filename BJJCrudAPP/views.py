@@ -1,12 +1,10 @@
 from django.views.generic import CreateView
 from django.shortcuts import render
 
-from django.views.decorators.csrf import csrf_exempt
 from .models import Student
 from .forms import StudentForm  # You'll create this form in the next step
 
 
-@csrf_exempt
 class StudentCreateView(CreateView):
     model = Student
     form_class = StudentForm
