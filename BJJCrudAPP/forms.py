@@ -128,7 +128,7 @@ class StudentForm(forms.ModelForm):
         label="Fecha de Nacimiento",
         widget=forms.DateInput(attrs={"class": "form-control", "type": "date"}),
     )
-    belt_colour = forms.ChoiceField(choices=Student.BELT_COLORS)
+    belt_colour = forms.ChoiceField(label="Faixa",choices=Student.BELT_COLORS)
 
     class Meta:
         model = Student
@@ -174,7 +174,7 @@ class StudentForm(forms.ModelForm):
         self.helper.form_class = "form-control form-control-lg"
         self.helper.label_class = "form-label"
         self.helper.field_class = "col-md-8"
-        self.helper.add_input(Submit("submit", "Submit", css_class="btn-primary"))
+        self.helper.add_input(Submit("submit", "Enviar", css_class="btn-primary"))
         self.helper.form_method = "POST"
         # self.helper.add_input(forms.Submit("submit", "Save"))
 
