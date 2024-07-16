@@ -1,5 +1,7 @@
 psycopg2-binary
 dj-database-url
+gunicorn
+uvicorn
 python-dotenv
 Django
 django-tables2
