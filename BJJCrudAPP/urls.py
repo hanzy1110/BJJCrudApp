@@ -23,6 +23,6 @@ from .views import StudentCreateView, registration_successful_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    # path("ingreso/", csrf_exempt(StudentCreateView.as_view())),
-    # path("success/", registration_successful_view),
+    path("ingreso/", csrf_exempt(StudentCreateView.as_view())),
+    path("success/", registration_successful_view),
 ]
