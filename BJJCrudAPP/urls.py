@@ -18,11 +18,12 @@ from django.contrib import admin
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 
-from .views import StudentCreateView, registration_successful_view
+from .views import StudentCreateView, registration_successful_view, tabla_pesos
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("ingreso/", csrf_exempt(StudentCreateView.as_view())),
     path("success/", registration_successful_view),
+    path("tabla_pesos/", tabla_pesos, name="tabla_pesos"),
 ]
