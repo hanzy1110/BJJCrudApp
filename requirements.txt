@@ -2,6 +2,7 @@ psycopg2-binary
 dj-database-url
 gunicorn
 uvicorn
+'whitenoise[brotli]'
 python-dotenv
 Django
 django-tables2
