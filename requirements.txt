@@ -1,3 +1,5 @@
+psycopg2-binary
+dj-database-url
 python-dotenv
 Django
 django-tables2
