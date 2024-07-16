@@ -10,4 +10,4 @@ python manage.py collectstatic --noinput
 sleep 10
 echo "Starting Server..."
 
-python manage.py runserver 0.0.0.0:${WEB_PORT}
+# python manage.py runserver 0.0.0.0:${WEB_PORT}
