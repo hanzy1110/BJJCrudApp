@@ -44,8 +44,8 @@
 
                                 <div class="card-body p-md-5 text-black">
                                     <h3 class="mb-5 text-uppercase">Planilla Registro Torneo</h3>
-                                        <button hx-get="{% url 'tabla_pesos' %}" hx-swap="beforeend" hx-target="body" hx-trigger="onclick">
-                                            <h5 class="mb-5 text-uppercase">Tabla Pesos</h5>
+                                        <button class="btn btn-primary" hx-get="{% url 'tabla_pesos' %}" hx-swap="beforeend" hx-target="body">
+                                            Tabla Pesos
                                         </button>
                                     <!-- FORM STARTS HERE! -->
                                     {% crispy form %}
