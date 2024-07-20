@@ -19,4 +19,4 @@ def registration_successful_view(request):
     return render(request, "success.html")
 
 def tabla_pesos(request, *args, **kwargs):
-    return render(request, "success.html")
+    return render(request, "modal.html")
