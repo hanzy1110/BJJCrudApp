@@ -1,16 +1,13 @@
-<div id="modal" _="on closeModal add .closing then wait for animationend then remove me">
-    <div class="modal-underlay" _="on click trigger closeModal"></div>
-    <div class="modal-content">
-
-        <div class="modal-header">
-            <h4 class="modal-title" id="dialogAddExceso">Tabla Pesos</h4>
-        </div>
-        <div class="modal-body" id="confirm-body">
-            <button class="btn btn-sm btn-primary">
-                Confirmar
-            </button>
-        </div>
-        <button id="modalCloser" hx-get="/empty" hx-target="#modal" hx-swap="outerHTML" hx-trigger="click"
-            class="btn btn-primary">Cerrar</button>
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">Tabla Pesos</h5>
     </div>
+    <div class="modal-body">
+      <p>Categorias por peso</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
 </div>
