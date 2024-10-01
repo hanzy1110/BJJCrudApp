@@ -9,6 +9,18 @@ from datetime import date
 # gender => age_class => max_weight
 CATEGORIES = {
     "m": {
+
+        "infantiles": {
+            39: "gallo",
+            45.5: "pluma",
+            52: "pena",
+            58.5: "leve",
+            65.5: "medio",
+            72: "medio pesado",
+            78.5: "pesado",
+            85: "super pesado",
+            -1: "Pesadisimo",
+        },
         "adulto": {
             57.5: "gallo",
             64: "pluma",
@@ -44,6 +56,18 @@ CATEGORIES = {
         },
     },
     "f": {
+
+        "infantiles": {
+            39: "gallo",
+            45.5: "pluma",
+            52: "pena",
+            58.5: "leve",
+            65.5: "medio",
+            72: "medio pesado",
+            78.5: "pesado",
+            85: "super pesado",
+            -1: "Pesadisimo",
+        },
         "adulto": {
             48.5: "gallo",
             53.5: "pluma",
@@ -84,6 +108,7 @@ AGE_CATEGORIES = {
     36: "master",
     41: "master1",
     46: "master2",
+    51: "master3",
 }
 
 
@@ -103,10 +128,10 @@ def assign_class(instance: Student):
             break
 
     if "master" in age_class:
-        age_class = age_class.replace("1", "").replace("2", "")
+        age_class = age_class.replace("1", "").replace("2", "").replace("3", "")
         weigth_class = CATEGORIES[instance.gender][age_class]
     else:
-        weigth_class = CATEGORIES[instance.gender][age_class]
+        weigth_class = CATEGORIESinstance.gender[age_class]
 
     w_denomination = ""
     for weigth_limit, weigth_denomination in weigth_class.items():
