@@ -131,7 +131,7 @@ def assign_class(instance: Student):
         age_class = age_class.replace("1", "").replace("2", "").replace("3", "")
         weigth_class = CATEGORIES[instance.gender][age_class]
     else:
-        weigth_class = CATEGORIESinstance.gender[age_class]
+        weigth_class = CATEGORIES[instance.gender][age_class]
 
     w_denomination = ""
     for weigth_limit, weigth_denomination in weigth_class.items():
